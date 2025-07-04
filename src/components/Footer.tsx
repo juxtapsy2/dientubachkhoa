@@ -1,6 +1,6 @@
 'use client';
 
-import { MapPin, Phone, MessageCircleMore } from 'lucide-react';
+import { MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Logo from '@/assets/logos/logo.png';
 import IconZalo from '@/assets/icons/iconZalo.png';

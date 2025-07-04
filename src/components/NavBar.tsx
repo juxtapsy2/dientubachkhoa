@@ -14,14 +14,14 @@ export default function NavBar() {
     <header className="fixed top-0 left-0 w-full px-8 z-50 bg-white backdrop-blur-md shadow-md">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src={Logo}
             alt="Logo"
             className="object-contain aspect-auto w-[40px] transition-transform duration-200 hover:scale-150"
           />
           <span className="md:text-lg font-semibold text-blue-900 transition-transform duration-200 hover:scale-110">Trung Tâm Điện Tử Bách Khoa</span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-6 text-sm md:text-base text-blue-900 font-medium">

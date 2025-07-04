@@ -1,4 +1,4 @@
-import { Wrench, Tv2, ShieldCheck, TimerReset, Phone, Zap, MonitorCheck } from 'lucide-react';
+import { Wrench, ShieldCheck, Zap, MonitorCheck } from 'lucide-react';
 
 export const TELEPHONE = "tel:+84946409966";
 export const ZALO = "https://zalo.me/0946409966";
