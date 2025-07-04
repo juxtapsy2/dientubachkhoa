@@ -1,10 +1,30 @@
 import HeroSection from '@/components/HeroSection';
 import Head from 'next/head';
 
+// app/page.tsx or app/home/page.tsx (App Router style)
 export const metadata = {
   title: "Trung Tâm Điện Tử Bách Khoa",
-  description: "Expert TV repair services near you.",
+  description: "Affordable TV repair services for all brands. Book your repair today with expert technicians.",
+  keywords: ["dien tu bach khoa", "sua tv", "sua chua tv", "sua tivi ha noi", "sua tv bach khoa", "sua tivi bach khoa", "TV repair", "television repair", "screen fix", "electronics repair", "local TV repair"],
+  authors: [{ name: "Trung Tâm Điện Lạnh Bách Khoa" }],
+  openGraph: {
+    title: "Trung Tâm Điện Tử Bách Khoa",
+    description: "Expert TV repair services near you.",
+    url: "https://suatvbachkhoa.com",
+    siteName: "Trung Tâm Điện Tử Bách Khoa",
+    images: [
+      {
+        url: "https://yourdomain.com/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Trung Tâm Điện Lạnh Bách Khoa logo",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  }
 };
+
 
 export default function HomePage() {
   return (
@@ -28,7 +48,7 @@ export default function HomePage() {
               "addressLocality": "Hà Nội",
               "addressCountry": "VN"
             },
-            "url": "https://yourdomain.com"
+            "url": "https://suatvbachkhoa.com"
           })
         }} />
       </Head>

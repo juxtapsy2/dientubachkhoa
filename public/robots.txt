@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://suatvbachkhoa.com
+
+# Sitemaps
+Sitemap: https://suatvbachkhoa.com/sitemap.xml
