@@ -8,14 +8,14 @@ import LogoNoBg from '@/assets/logos/logo-removebg.png';
 
 export default function HeroSection() {
   return (
-    <section className="relative mt-[50px] bg-[url('/tv-bg.jpg')] bg-cover bg-center text-white min-h-[550px] flex items-center justify-center">
+    <section className="relative mt-[60px] bg-[url('/scenic-tv-bg.jpg')] bg-cover aspect-auto bg-center text-white min-h-[600px] flex items-center justify-center">
       {/* Overlay Blur Glass */}
-      <div className="absolute inset-0 bg-blue-400/20 backdrop-blur-md z-0" />
+ 
 
       {/* Glass Card Content */}
       <div className="relative flex flex-row z-10 w-full max-w-4xl mx-auto rounded-xl shadow-xl bg-white/20 backdrop-blur-md p-6 md:p-10 text-center space-y-4">
         <div className="align-center my-auto">
-          <Image src={LogoNoBg} alt="Logo" className="min-w-[200px] max-w-[200px] aspect-auto transition-transform duration-200 hover:scale-120" />
+          <Image src={LogoNoBg} alt="Logo" className="min-w-[200px] max-w-[200px] aspect-auto transition-transform duration-200 hover:scale-125" />
         </div>
         <div>
           {/* Contact Info */}
@@ -37,7 +37,7 @@ export default function HeroSection() {
           {/* Call Button */}
           <a
             href={TELEPHONE}
-            className="duration-[50ms] inline-flex max-w-fit md:whitespace-nowrap items-center gap-2 z-[9999] justify-center bg-blue-800 cursor-pointer hover:bg-blue-700 px-6 py-2 rounded-full text-white font-semibold transition"
+            className="duration-[50ms] inline-flex max-w-fit md:whitespace-nowrap items-center gap-2 z-[9999] justify-center bg-blue-900 cursor-pointer hover:bg-blue-700 px-6 py-2 rounded-full text-white font-semibold transition"
           >
             <PhoneCall className="w-5 h-5 animate-bounce duration-75" />
             Gọi ngay: 0946 409 966

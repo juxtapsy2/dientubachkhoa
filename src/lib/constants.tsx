@@ -26,22 +26,22 @@ export const ADDRESSES = [
 
 export const FEATURES = [
     {
-      icon: <Zap size={28} className="text-blue-600" />,
+      icon: <Zap size={28} className="text-blue-500" />,
       title: 'Tư vấn & hỗ trợ 24/7',
       desc: 'Gọi là đến ngay sau 20 – 25 phút trong khu vực Hà Nội.',
     },
     {
-      icon: <Wrench size={28} className="text-blue-600" />,
+      icon: <Wrench size={28} className="text-blue-500" />,
       title: 'Chẩn đoán & sửa chữa tận nơi',
       desc: 'Kiểm tra lỗi miễn phí – sửa tận nhà với chi phí tiết kiệm.',
     },
     {
-      icon: <ShieldCheck size={28} className="text-blue-600" />,
+      icon: <ShieldCheck size={28} className="text-blue-500" />,
       title: 'Bảo hành dài hạn',
       desc: 'Bảo hành từ 6 tháng đến 2 năm tuỳ từng linh kiện.',
     },
     {
-      icon: <MonitorCheck size={28} className="text-blue-600" />,
+      icon: <MonitorCheck size={28} className="text-blue-500" />,
       title: 'Không phát sinh phụ phí',
       desc: 'Báo đúng bệnh – sửa đúng giá.',
     },
@@ -81,7 +81,7 @@ export const TV_ERRORS = [
         ],
     },
     {
-      title: 'Bệnh bo khiển',
+      title: 'Bệnh bo mạch điều khiển',
       errors: [
         'Không dò được kênh.',
         'Không nhận tín hiệu cổng AV, HDMI,...',

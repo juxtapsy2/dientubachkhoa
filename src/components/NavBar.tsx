@@ -20,7 +20,7 @@ export default function NavBar() {
             alt="Logo"
             className="object-contain aspect-auto w-[40px] transition-transform duration-200 hover:scale-150"
           />
-          <span className="md:text-lg font-semibold text-blue-900 transition-transform duration-200 hover:scale-110">Trung Tâm Điện Tử Bách Khoa</span>
+          <span className="md:text-lg font-semibold text-blue-950 transition-transform duration-200 hover:scale-110">Trung Tâm Điện Tử Bách Khoa</span>
         </Link>
 
         {/* Desktop Navigation */}
