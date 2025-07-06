@@ -106,7 +106,7 @@ export const FAQs = [
   },
   {
     question: "Bao nhiêu lâu thì các bạn sẽ đến?",
-    answer: "Chúng tôi có mặt tại nhà bạn sau 15–30 phút kể từ khi nhận yêu cầu.",
+    answer: "Chúng tôi có mặt tại nhà bạn sau 15 – 30 phút kể từ khi nhận yêu cầu.",
   },
   {
     question: "Sửa Tivi tại nhà hết bao nhiêu lâu?",

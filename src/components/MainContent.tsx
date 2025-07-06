@@ -45,7 +45,7 @@ export default function MainContent() {
         <div>
           <h2 className="text-3xl font-extrabold text-blue-900 mb-3 inline-block transition-transform duration-200 hover:scale-110">Về chúng tôi</h2>
           <p className="text-gray-700 font-medium mb-5 leading-relaxed text-base">
-            Trung Tâm Điện tử Bách Khoa – Hơn 15 năm sửa chữa Tivi tại nhà uy tín khắp Hà Nội!
+            Trung Tâm Điện Tử Bách Khoa – Hơn 10 năm sửa chữa Tivi uy tín khắp Hà Nội!
           </p>
 
           {/* About images with hover animation */}
@@ -72,7 +72,7 @@ export default function MainContent() {
             <strong> Đại học & Cao đẳng</strong>.
             <br />
             Hiện nay, chúng tôi đã và đang phát triển mạnh mẽ với <strong>12 cơ sở</strong> trải khắp Hà Nội,
-            cùng đội ngũ được tuyển chọn kỹ lưỡng theo tiêu chí:
+            đồng hành cùng đội ngũ <strong>32 kỹ thuật viên</strong> được tuyển chọn kỹ lưỡng theo tiêu chí:
             <span className="text-blue-800 font-semibold"> chuyên nghiệp – nhiệt tình – tận tâm</span>.
           </p>
         </div>
