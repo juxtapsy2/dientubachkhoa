@@ -11,7 +11,7 @@ export const metadata = {
   authors: [{ name: "Trung Tâm Điện Tử Bách Khoa" }],
   openGraph: {
     title: "Trung Tâm Điện Tử Bách Khoa",
-    description: "Dịch vụ sửa chữa tivi chuyên nghiệp gần bạn.",
+    description: "Dịch vụ sửa chữa Tivi chuyên nghiệp, chuyên sửa chữa Tivi tại nhà — nhanh chóng, giá rẻ, phục vụ khắp Hà Nội.",
     url: "https://suatvbachkhoa.com.vn",
     siteName: "Trung Tâm Điện Tử Bách Khoa",
     images: [
