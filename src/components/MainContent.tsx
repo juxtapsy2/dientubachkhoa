@@ -40,7 +40,7 @@ export default function MainContent() {
             </div>
         </section>
         {/* About & FAQs */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 items-start mt-8">
+        <section id="about" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 items-start mt-8">
         {/* About Us */}
         <div>
           <h2 className="text-3xl font-extrabold text-blue-900 mb-3 inline-block transition-transform duration-200 hover:scale-110">Về chúng tôi</h2>

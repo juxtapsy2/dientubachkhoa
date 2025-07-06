@@ -5,8 +5,9 @@ export const ZALO = "https://zalo.me/0946409966";
 export const SLOGAN = "Chất lượng, nhanh chóng, giá cả hợp lý, bảo hành tận ly.";
 
 export const NAVLINKS = [
-    { label: "Sửa TV", to: "/#services" },
-    { label: "Liên hệ", to: "/#contact" },
+  { label: "Về chúng tôi", to: "/#about"},
+  { label: "Dịch vụ", to: "/#services" },
+  { label: "Liên hệ", to: "/#contact" },
 ];
 
 export const ADDRESSES = [
