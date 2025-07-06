@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://suatvbachkhoa.com
+Host: https://suatvbachkhoa.com.vn
 
 # Sitemaps
-Sitemap: https://suatvbachkhoa.com/sitemap.xml
+Sitemap: https://suatvbachkhoa.com.vn/sitemap.xml
