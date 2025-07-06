@@ -42,15 +42,51 @@ body {
   @keyframes ring {
     0% { transform: rotate(0); }
     2% { transform: rotate(8deg); }
-    4% { transform: rotate(-8deg); }
-    6% { transform: rotate(8deg); }
-    8% { transform: rotate(-6deg); }
-    10% { transform: rotate(4deg); }
-    12% { transform: rotate(-2deg); }
+    4% { transform: rotate(-16deg); }
+    6% { transform: rotate(16deg); }
+    8% { transform: rotate(-10deg); }
+    10% { transform: rotate(8deg); }
+    12% { transform: rotate(-4deg); }
     14%, 100% { transform: rotate(0); }
   }
 
   .animate-ring-delay {
-    animation-delay: 1s;
+    animation-delay: 0.25s;
+  }
+  .aura-wrapper {
+    @apply relative w-16 h-16 flex items-center justify-center;
+  }
+
+  .aura-ring {
+    @apply absolute inset-0 rounded-full;
+    animation: pulse-ring 2.5s ease-out infinite;
+    opacity: 0.5;
+  }
+
+  .aura-ring:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .aura-ring:nth-child(2) {
+    animation-delay: 0.8s;
+  }
+
+  .aura-ring:nth-child(3) {
+    animation-delay: 1.6s;
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1.8);
+      opacity: 0.2;
+    }
+    100% {
+      transform: scale(2.5);
+      opacity: 0;
+    }
   }
 }
