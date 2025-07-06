@@ -93,4 +93,30 @@ export const TV_ERRORS = [
 ];
 
 export const COMMITMENT = "Trung Tâm Điện Tử Bách Khoa chuyên sửa chữa tất cả các loại tivi tận nhà, nhanh chóng với giá rẻ. Với tay nghề và am hiểu chuyên sâu, Kỹ thuật viên có thể bắt đúng bệnh và dứt điểm lỗi, hạn chế tối đa tái phát. Mục tiêu của chúng tôi là hướng đến một dịch vụ sửa Tivi uy tín và chất lượng nhất tại Hà Nội!";
-  
+
+export const FAQs = [
+  {
+    question: "Tôi không biết rõ Tivi đang bị hư hỏng gì?",
+    answer: "Bạn chỉ cần gọi cho chúng tôi, kỹ thuật viên sẽ đến và kiểm tra hoàn toàn miễn phí.",
+  },
+  {
+    question: "Điện tử Bách Khoa có thể sửa dứt điểm các bệnh nào?",
+    answer: "Chúng tôi sửa tất cả các lỗi phổ biến như mất hình, mất tiếng, lỗi nguồn, bo khiển, panel, và hơn thế nữa.",
+  },
+  {
+    question: "Bao nhiêu lâu thì các bạn sẽ đến?",
+    answer: "Chúng tôi có mặt tại nhà bạn sau 15–30 phút kể từ khi nhận yêu cầu.",
+  },
+  {
+    question: "Sửa Tivi tại nhà hết bao nhiêu lâu?",
+    answer: "Thời gian sửa từ 15 phút đến 1 giờ, tùy theo mức độ hư hỏng.",
+  },
+  {
+    question: "Sửa màn hình Tivi hết bao nhiêu tiền?",
+    answer: "Tùy lỗi và loại tivi, giá cả dao động từ 300.000 - 1.500.000. Luôn báo giá trước khi làm.",
+  },
+  {
+    question: "Thời gian bảo hành như thế nào?",
+    answer: "Bảo hành từ 6 tháng đến 2 năm tùy vào từng linh kiện thay thế.",
+  },
+];

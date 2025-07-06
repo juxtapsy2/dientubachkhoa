@@ -1,22 +1,25 @@
 'use client';
 
-import { COMMITMENT, FEATURES, TELEPHONE, TV_ERRORS } from '@/lib/constants';
+import { COMMITMENT, FAQs, FEATURES, TELEPHONE, TV_ERRORS } from '@/lib/constants';
 import { AlertTriangle } from 'lucide-react';
 import React from 'react';
+import FaqItem from './FAQ';
+import repairEngineer1 from "@/assets/fixing/electronic_circuit_repair.png";
+import repairEngineer2 from "@/assets/fixing/repair-engineer-2.png";
+import Image from 'next/image';
 
 export default function MainContent() {
   return (
     <section id="services" className="bg-white py-12 px-4 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-6 transition-transform duration-200 hover:scale-110">
-          Sửa Chữa Tivi Tại Hà Nội
+        <h2 className="text-2xl md:text-3xl font-extrabold text-center text-blue-900 mb-6 transition-transform duration-200 hover:scale-110">
+          Dịch vụ sửa chữa Tivi tại Hà Nội
         </h2>
         <p className="text-center text-gray-700 max-w-4xl mx-auto mb-10">
           {COMMITMENT}
         </p>
-
         <section
-            className="relative py-32 bg-[url('/tv-bg.jpg')] bg-cover bg-center text-white sm:px-6 lg:px-8"
+            className="relative py-32 bg-[url('/tv-bg.jpg')] bg-cover bg-center text-white sm:px-6 lg:px-8 rounded-tl-lg rounded-tr-lg"
         >
             <div className="max-w-7xl mx-auto">
                 {/* Glassy features grid */}
@@ -36,10 +39,63 @@ export default function MainContent() {
                 </div>
             </div>
         </section>
+        {/* About & FAQs */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 items-start mt-8">
+        {/* About Us */}
+        <div>
+          <h2 className="text-3xl font-extrabold text-blue-900 mb-3 inline-block transition-transform duration-200 hover:scale-110">Về chúng tôi</h2>
+          <p className="text-gray-700 font-medium mb-5 leading-relaxed text-base">
+            Trung Tâm Điện tử Bách Khoa – Hơn 15 năm sửa chữa Tivi tại nhà uy tín khắp Hà Nội!
+          </p>
+
+          {/* About images with hover animation */}
+          <div className="grid grid-cols-2 gap-4 mb-5">
+            <Image
+              src={repairEngineer1}
+              alt="Kỹ thuật viên sửa tivi"
+              loading="lazy"
+              className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            />
+            <Image
+              src={repairEngineer2}
+              alt="Thợ sửa tivi"
+              loading="lazy"
+              className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          {/* About description */}
+          <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+            Thành lập từ những năm <strong>2010</strong> và liên tục hoạt động cho tới nay,
+            <strong> Trung Tâm Điện Tử Bách Khoa</strong> chuyên sửa chữa tivi ở Hà Nội.
+            Đội ngũ khởi đầu với 3 kỹ thuật viên trình độ kỹ thuật lành nghề tốt nghiệp từ các trường
+            <strong> Đại học & Cao đẳng</strong>.
+            <br />
+            Hiện nay, chúng tôi đã và đang phát triển mạnh mẽ với <strong>12 cơ sở</strong> trải khắp Hà Nội,
+            cùng đội ngũ được tuyển chọn kỹ lưỡng theo tiêu chí:
+            <span className="text-blue-800 font-semibold"> chuyên nghiệp – nhiệt tình – tận tâm</span>.
+          </p>
+        </div>
+
+        {/* FAQ Section */}
+        <div>
+          <h2 className="text-3xl font-extrabold text-blue-900 mb-3 inline-block transition-transform duration-200 hover:scale-110">Câu hỏi thường gặp</h2>
+          <p className="text-gray-600 text-sm mb-5">
+            Những thắc mắc thường gặp khi sử dụng dịch vụ của chúng tôi.
+          </p>
+
+          <div className="space-y-4">
+            {FAQs.map((faq, index) => (
+              <FaqItem key={index} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+        </div>
+      </section>
+
 
         {/* Common Errors */}
-        <div className="bg-gray-50 border border-blue-100 p-6 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+        <div className="bg-gray-50 border-none rounded-bl-lg rounded-br-lg p-6 shadow-sm">
+            <h3 className="text-2xl font-bold text-blue-900 mb-4 items-center gap-2 inline-flex transition-transform duration-200 hover:scale-110">
                 <AlertTriangle size={20} className="text-red-500" />
                 Các lỗi tivi phổ biến
             </h3>
@@ -47,7 +103,7 @@ export default function MainContent() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {TV_ERRORS.map((group, idx) => (
                 <div key={idx}>
-                    <h4 className="text-xl font-semibold text-blue-800 mb-2">{group.title}</h4>
+                    <h4 className="text-xl font-semibold text-blue-800 mb-2 inline-block transition-transform duration-200 hover:scale-110">{group.title}</h4>
                     <ul className="list-disc list-inside text-base text-gray-700 space-y-1">
                     {group.errors.map((err, i) => (
                         <li key={i}>{err}</li>

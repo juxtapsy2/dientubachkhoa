@@ -27,13 +27,13 @@ export default function NavBar() {
         <ul className="hidden md:flex items-center gap-6 text-sm md:text-base text-blue-900 font-medium">
           {NAVLINKS.map((navlink) => (
             <li key={navlink.to}>
-              <a href={navlink.to} className="transition-transform duration-200 hover:scale-110 hover:text-blue-600">{navlink.label}</a>
+              <a href={navlink.to} className="inline-block transition-transform duration-200 hover:scale-110 hover:text-blue-600">{navlink.label}</a>
             </li>
           ))}
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-blue-900" onClick={() => setMenuOpen(!menuOpen)}>
+        <button className="md:hidden text-blue-900 transition-transform duration-200 hover:scale-110" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>

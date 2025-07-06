@@ -27,8 +27,8 @@ export default function HeroSection() {
           </div>
           
           {/* Heading */}
-          <h1 className="text-3xl md:text-4xl font-bold my-4 text-center">
-            TRUNG TÂM ĐIỆN TỬ BÁCH KHOA
+          <h1 className="text-3xl md:text-4xl font-extrabold my-4 text-center">
+            Sửa Chữa Tivi Tại Hà Nội
           </h1>
           <p className="text-base md:text-lg my-4 text-center">
             {SLOGAN}
